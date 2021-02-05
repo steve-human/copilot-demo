@@ -3,8 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches: [master]
-    paths-ignore:
-    - '.github/**'
+    paths-ignore: ['.github/**', 'README.md']
 
 jobs:
   build:
