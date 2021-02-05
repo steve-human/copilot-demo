@@ -30,6 +30,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
         role-to-assume: ${{ secrets.AWS_DEV_ROLE }}
+        role-skip-session-tagging: true
     - name: Setup AWS Copilot
       uses: softprops/setup-aws-copilot@v1
     - run: copilot svc deploy -n my-api --env test
