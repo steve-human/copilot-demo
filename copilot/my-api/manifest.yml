@@ -1,5 +1,4 @@
 name: my-api
-# Your service is reachable at "http://my-api.${COPILOT_SERVICE_DISCOVERY_ENDPOINT}:3000" but is not public.
 type: Backend Service
 
 image:
@@ -11,4 +10,4 @@ cpu: 256
 # Amount of memory in MiB used by the task.
 memory: 512
 # Number of tasks that should be running in your service.
-count: 1
+count: 0
